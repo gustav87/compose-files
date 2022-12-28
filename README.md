@@ -7,3 +7,6 @@ The portainer docker-compose.yml uses the following images:
 - nginxproxy/nginx-proxy as a reverse proxy with automatic routing to containers
 - nginxproxy/acme-companion for handling SSL certificates for the proxied containers
 
+## Running a compose file
+`docker compose up -d`
+
