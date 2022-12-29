@@ -20,8 +20,6 @@ services:
     restart: always
     environment:
       - DEFAULT_EMAIL=gustav87and@gmail.com
-    volumes_from:
-      - nginx-proxy:rw
     volumes:
       - "certs:/etc/nginx/certs"
       - "vhost:/etc/nginx/vhost.d"
@@ -50,4 +48,8 @@ volumes:
   vhost:
   html:
   acme:
+
+networks:
+  default:
+    name: nginx-proxy-network
 
