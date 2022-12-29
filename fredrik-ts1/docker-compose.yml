@@ -1,0 +1,12 @@
+version: "2"
+
+services:
+  fredrik-ts1:
+    container_name: fredrik-ts1
+    image: gustav87/fredrik-ts1
+    restart: always
+
+networks:
+  default:
+    name: nginx-proxy-network
+
