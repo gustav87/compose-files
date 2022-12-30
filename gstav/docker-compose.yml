@@ -1,0 +1,22 @@
+services:
+  app:
+    container_name: gstav-frontend
+    image: gustav87/gstav-frontend
+    restart: always
+
+  backend:
+    container_name: gstav-backend
+    image: gustav87/gstav-backend
+    restart: always
+
+  db:
+    container_name: gstav-db
+    image: mongo
+    restart: always
+    ports:
+      - "27017:27017"
+
+networks:
+  default:
+    name: nginx-proxy-network
+
