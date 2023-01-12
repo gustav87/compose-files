@@ -8,6 +8,11 @@ services:
     container_name: gstav-backend
     image: gustav87/gstav-backend
     restart: always
+    environment:
+      - flickr_api_key=xyz
+      - mailgun_domain=xyz.mailgun.org
+      - mailgun_api_key=xyz-key-abc
+      - mailgun_from=xyz
 
   db:
     container_name: gstav-db
