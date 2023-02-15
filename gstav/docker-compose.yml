@@ -10,9 +10,9 @@ services:
     restart: always
     environment:
       - flickr_api_key=${flickr_api_key}
-      - mailgun_domain=xyz.mailgun.org
-      - mailgun_api_key=xyz-key-abc
-      - mailgun_from=xyz
+      - mailgun_domain=${mailgun_domain}
+      - mailgun_api_key=${mailgun_api_key}
+      - mailgun_from=${mailgun_from}
 
   db:
     container_name: gstav-db
