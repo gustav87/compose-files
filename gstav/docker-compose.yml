@@ -1,12 +1,12 @@
 services:
   app:
     container_name: gstav-frontend
-    image: gustav87/gstav-frontend
+    image: "gustav87/gstav-frontend:${TAG}"
     restart: always
 
   backend:
     container_name: gstav-backend
-    image: gustav87/gstav-backend
+    image: "gustav87/gstav-backend:${TAG}"
     restart: always
     environment:
       - flickr_api_key=xyz
