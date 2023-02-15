@@ -9,7 +9,7 @@ services:
     image: "gustav87/gstav-backend:${TAG}"
     restart: always
     environment:
-      - flickr_api_key=xyz
+      - flickr_api_key=${flickr_api_key}
       - mailgun_domain=xyz.mailgun.org
       - mailgun_api_key=xyz-key-abc
       - mailgun_from=xyz
