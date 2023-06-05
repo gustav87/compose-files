@@ -1,0 +1,10 @@
+services:
+  react1-frontend:
+    container_name: react1-frontend
+    image: "gustav87/react1-frontend:${TAG}"
+    restart: always
+
+networks:
+  default:
+    name: nginx-proxy-network
+

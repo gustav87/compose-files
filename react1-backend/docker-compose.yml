@@ -1,0 +1,17 @@
+services:
+  react1-backend:
+    container_name: react1-backend
+    image: "gustav87/react1-backend:${TAG}"
+    restart: always
+
+  db:
+    container_name: react1-db
+    image: mongo
+    restart: always
+    ports:
+      - "27017:27017"
+
+networks:
+  default:
+    name: nginx-proxy-network
+
