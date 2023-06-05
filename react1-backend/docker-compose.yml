@@ -9,7 +9,7 @@ services:
     image: mongo
     restart: always
     ports:
-      - "27017:27017"
+      - "27020:27017"
 
 networks:
   default:
