@@ -3,6 +3,14 @@ services:
     container_name: react1-backend
     image: "gustav87/react1-backend:${TAG}"
     restart: always
+    environment:
+      - adminToken=${adminToken}
+      - alibabaAccessKey=${alibabaAccessKey}
+      - alibabaSecretKey=${alibabaSecretKey}
+      - awsAccessKey=${awsAccessKey}
+      - awsSecretKey=${awsSecretKey}
+      - mongoConnectionString=${mongoConnectionString}
+      - userToken=${userToken}
 
   react1-db:
     container_name: react1-db
